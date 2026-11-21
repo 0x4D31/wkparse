@@ -1,0 +1,25 @@
+# Build output
+/wkparse
+/dist/
+*.exe
+
+# Scan output and exported payloads
+/bodies/
+/recovered_bodies/
+*.jsonl
+report.json
+triage.json
+timeline.csv
+
+# Evidence must never be committed
+/evidence/
+/samples/
+
+# Go fuzz corpus generated locally
+testdata/fuzz/
+
+.DS_Store
+
+# Python validation tooling
+__pycache__/
+*.pyc
